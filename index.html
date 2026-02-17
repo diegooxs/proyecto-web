@@ -17,22 +17,24 @@
             <p>Alta Cocina & Experiencias</p>
         </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li class="user-dropdown">
-                    <a href="#">Hola, Santiago ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#">Perfil</a>
-                        <a href="#">Mis Pedidos</a>
-                        <hr>
-                        <a href="login.html" class="logout">Cerrar Sesión</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+       <nav class="main-nav">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Menú</a></li>
+            
+            <li><a href="#modal-reserva">Reservas</a></li> 
+            
+            <li class="user-dropdown">
+                <a href="#">Hola, Santiago ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Perfil</a>
+                    <a href="#">Mis Pedidos</a>
+                    <hr>
+                    <a href="login.html" class="logout">Cerrar Sesión</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
     </header>
 
     <div class="main-wrapper">
@@ -100,6 +102,32 @@
     <footer class="site-footer">
         <p>&copy; 2026 Restaurante Sabor Azul - HTML5 Semántico</p>
     </footer>
+    <section id="modal-reserva" class="modal-overlay">
+    
+    <article class="modal-card">
+        <header class="modal-header">
+            <h3>Reservar Mesa</h3>
+            <a href="#" class="btn-close">&times;</a>
+        </header>
 
+        <form action="#" class="reservation-form">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" placeholder="Ej. Juan Hernandez" required>
+
+            <label for="date">Fecha</label>
+            <input type="date" id="date" required>
+
+            <label for="people">Personas</label>
+            <select id="people">
+                <option value="2">2 Personas</option>
+                <option value="4">4 Personas</option>
+                <option value="6">6+ Personas</option>
+            </select>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </article>
+
+</section>
 </body>
 </html>

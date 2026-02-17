@@ -177,9 +177,102 @@ figure { margin: 0; padding: 0; }
     margin-top: 40px;
 }
 
-/* --- MÓVIL --- */
+
 @media (max-width: 768px) {
     .main-wrapper { flex-direction: column; }
     .food-item { flex-direction: column; }
     .food-item figure { height: 180px; }
+}
+
+
+.modal-overlay {
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    opacity: 0;         
+    visibility: hidden;   
+    transition: opacity 0.3s ease; 
+    z-index: 2000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-card {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: scale(0.7); 
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay:target .modal-card {
+    transform: scale(1); 
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #1b3a57;
+}
+
+.btn-close {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #999;
+    line-height: 1;
+}
+
+.btn-close:hover {
+    color: #e74c3c;
+}
+
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1b3a57;
+    font-weight: 600;
+}
+
+.reservation-form input, 
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1b3a57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #2a5275;
 }
