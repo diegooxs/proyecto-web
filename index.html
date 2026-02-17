@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sabor Azul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>🍽️ Sabor Azul</h1>
+            <p>Alta Cocina & Experiencias</p>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li class="user-dropdown">
+                    <a href="#">Hola, Santiago ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#">Perfil</a>
+                        <a href="#">Mis Pedidos</a>
+                        <hr>
+                        <a href="login.html" class="logout">Cerrar Sesión</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+
+        <article class="content-area">
+            <h2 class="area-title">Nuestros Especiales</h2>
+            
+            <section class="food-item">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Ensalada">
+                </figure>
+                <div class="details">
+                    <h3>Ensalada César</h3>
+                    <p>Lechuga romana, aderezo artesanal y parmesano.</p>
+                    <button>Ordenar $456.00</button>
+                </div>
+            </section>
+
+            <section class="food-item">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
+                </figure>
+                <div class="details">
+                    <h3>Pizza Azul</h3>
+                    <p>Higos, jamón serrano y queso gorgonzola.</p>
+                    <button>Ordenar $400.00</button>
+                </div>  
+            </section>
+
+            <section class="food-item">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Steak">
+                </figure>
+                <div class="details">
+                    <h3>Ribeye Premium</h3>
+                    <p>Corte fino a la parrilla con salsa de vino.</p>
+                    <button>Ordenar $750.00</button>
+                </div>
+            </section>
+        </article>
+
+        <aside class="sidebar">
+            <h3 class="sidebar-title"> Ofertas del Día</h3>
+            
+            <div class="promo-card">
+                <h4> 2x1</h4>
+                <p>En coctelería de 6pm a 8pm.</p>
+            </div>
+
+            <div class="promo-card highlight">
+                <h4>¡Postre Gratis!</h4>
+                <p>En consumos mayores a $500 MXN.</p>
+                <small>*Solo hoy</small>
+            </div>
+
+            <div class="newsletter">
+                <h4>Club VIP</h4>
+                <input type="email" placeholder="Tu correo...">
+                <button>Suscribirse</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Restaurante Sabor Azul - HTML5 Semántico</p>
+    </footer>
+
+</body>
+</html>

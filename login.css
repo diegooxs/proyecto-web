@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+    background-image: linear-gradient(rgba(27, 58, 87, 0.9), rgba(27, 58, 87, 0.8)), 
+                      url('https://images.unsplash.com/photo-1550966871-3ed3c47e2ce2?q=80&w=1470&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.logo-area h2 {
+    color: #1b3a57;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.logo-area p {
+    color: #666;
+    margin: 5px 0 30px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #1b3a57;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1b3a57;
+    outline: none;
+    background-color: #f4f8fb;
+}
+
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #1b3a57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #2a5275;
+}
+
+.forgot-pass {
+    display: block;
+    margin-top: 15px;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
