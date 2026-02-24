@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos - Sabor Azul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <img src="logo.png" alt="Logotipo premium de Sabor Azul" class="logo-principal">
+            <h1>🍽️ Sabor Azul</h1>
+            <p>Alta Cocina & Experiencias</p>
+        </div>
+
+       <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Menú</a></li>
+            <li><a href="index.html#modal-reserva">Reservas</a></li> 
+            <li class="user-dropdown">
+                <a href="#">Hola, Santiago ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Perfil</a>
+                    <a href="pedidos.html">Mis Pedidos</a>
+                    <hr>
+                    <a href="login.html" class="logout">Cerrar Sesión</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <article class="content-area" style="flex: 100%;">
+            <h2 class="area-title">Mi Historial de Pedidos</h2>
+
+            <table class="premium-table orders-table">
+                <caption>Registro de tus compras recientes</caption>
+                <thead>
+                    <tr>
+                        <th>Nº Pedido</th>
+                        <th>Fecha</th>
+                        <th>Platillo(s)</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><strong>#8402</strong></td>
+                        <td rowspan="2">23 Feb 2026</td>
+                        <td class="dish-cell">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Ensalada" class="tiny-avatar">
+                            <span>Ensalada César</span>
+                        </td>
+                        <td rowspan="2">$1,206.00</td>
+                        <td rowspan="2"><mark class="status-prep">En preparación</mark></td>
+                    </tr>
+                    <tr>
+                        <td class="dish-cell">
+                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Ribeye" class="tiny-avatar">
+                            <span>Ribeye Premium</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>#8355</strong></td>
+                        <td>15 Feb 2026</td>
+                        <td class="dish-cell">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza" class="tiny-avatar">
+                            <span>Pizza Azul</span>
+                        </td>
+                        <td>$400.00</td>
+                        <td><mark class="status-delivered">Entregado</mark></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="footer-cell" style="text-align: right;"><strong>Total de compras acumuladas este mes:</strong></td>
+                        <td><strong>$1,606.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Restaurante Sabor Azul - HTML5 Semántico</p>
+    </footer>
+
+</body>
+</html>

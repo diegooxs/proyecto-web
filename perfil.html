@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Sabor Azul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <img src="logo.png" alt="Logotipo premium de Sabor Azul" class="logo-principal">
+            <h1>🍽️ Sabor Azul</h1>
+            <p>Alta Cocina & Experiencias</p>
+        </div>
+       <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Menú</a></li>
+            <li><a href="index.html#modal-reserva">Reservas</a></li> 
+            <li class="user-dropdown">
+                <a href="#">Hola, Santiago ▼</a>
+                <div class="dropdown-content">
+                    <a href="perfil.html">Perfil</a>
+                    <a href="pedidos.html">Mis Pedidos</a>
+                    <hr>
+                    <a href="login.html" class="logout">Cerrar Sesión</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="main-wrapper profile-wrapper">
+        
+        <aside class="sidebar text-center">
+            <h3 class="sidebar-title">Nivel VIP Azul</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Foto de perfil" class="profile-pic">
+            
+            <p><strong>Puntos acumulados:</strong> 750 / 1000</p>
+            <progress value="750" max="1000" class="vip-progress"></progress>
+            <p><small>¡Te faltan 250 puntos para tu próximo descuento!</small></p>
+        </aside>
+
+        <article class="content-area">
+            <h2 class="area-title">Mis Datos Personales</h2>
+
+            <form action="#" method="GET" class="profile-form">
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" value="Santiago" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="telefono">Teléfono (Móvil):</label>
+                        <input type="tel" id="telefono" placeholder="Ej. 9511234567" required pattern="[0-9]{10}" title="Debe contener exactamente 10 dígitos">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="nacimiento" max="2008-12-31" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="foto">Actualizar Foto (JPG/PNG):</label>
+                        <input type="file" id="foto" accept="image/png, image/jpeg">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group" style="width: 100%;">
+                        <label for="platillo">Platillo Favorito (Autocompletado):</label>
+                        <input list="menu-opciones" id="platillo" name="platillo" placeholder="Empieza a escribir...">
+                        <datalist id="menu-opciones">
+                            <option value="Ribeye Premium">
+                            <option value="Pizza Azul">
+                            <option value="Salmón al Grill">
+                            <option value="Ensalada César">
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group" style="width: 100%;">
+                        <label for="picante">Nivel de picante tolerado: <output id="picante_valor">3</output></label>
+                        <input type="range" id="picante" min="1" max="5" value="3" step="1" oninput="picante_valor.value = picante.value">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-ingresar" style="width: auto; padding: 10px 30px;">Guardar Cambios</button>
+            </form>
+
+            <h2 class="area-title" style="margin-top: 40px;">Mis Direcciones de Envío</h2>
+            <table class="premium-table">
+                <thead>
+                    <tr>
+                        <th>Alias</th>
+                        <th>Dirección</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Casa</strong></td>
+                        <td>Colonia Centro, Oaxaca de Juárez, Oax.</td>
+                        <td><a href="#" class="logout" style="text-decoration: none;">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Escuela (ITO)</strong></td>
+                        <td>Av. Ing. Víctor Bravo Ahuja, Oaxaca de Juárez.</td>
+                        <td><a href="#" class="logout" style="text-decoration: none;">Eliminar</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: center;">
+                            <a href="#" style="color: #2b6cb0; font-weight: bold; text-decoration: none;">+ Agregar nueva dirección</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Restaurante Sabor Azul - HTML5 Semántico</p>
+    </footer>
+
+</body>
+</html>

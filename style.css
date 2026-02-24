@@ -1,16 +1,16 @@
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f8;
+    background-color: #f0f4f8; 
     color: #333;
 }
 
 figure { margin: 0; padding: 0; }
 
 .site-header {
-    background-color: #1b3a57; 
+    background-color: #1a365d; 
     color: white;
     text-align: center;
     padding-top: 20px;
@@ -18,7 +18,6 @@ figure { margin: 0; padding: 0; }
 
 .header-content h1 { margin: 0; font-size: 2.2rem; }
 .header-content p { margin: 5px 0 15px; font-weight: 300; opacity: 0.8; }
-
 
 .main-nav {
     background-color: #2a5275;
@@ -43,7 +42,7 @@ figure { margin: 0; padding: 0; }
 
 .main-nav a:hover { color: #b3ddf2; }
 
-
+/* Menú de Usuario */
 .user-dropdown { position: relative; }
 .dropdown-content {
     display: none;
@@ -67,6 +66,7 @@ figure { margin: 0; padding: 0; }
 .user-dropdown:hover .dropdown-content { display: block; }
 .logout { color: #e74c3c !important; }
 
+/* Layout Principal (Barra Lateral y Contenido) */
 .main-wrapper {
     display: flex;
     max-width: 1100px;
@@ -75,13 +75,10 @@ figure { margin: 0; padding: 0; }
     gap: 30px;
 }
 
-
-.content-area {
-    flex: 3; 
-}
+.content-area { flex: 3; }
 
 .area-title {
-    color: #1b3a57;
+    color: #1a365d;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
     margin-top: 0;
@@ -99,9 +96,7 @@ figure { margin: 0; padding: 0; }
 
 .food-item:hover { transform: translateX(5px); }
 
-.food-item figure {
-    flex: 0 0 180px; 
-}
+.food-item figure { flex: 0 0 180px; }
 
 .food-item img {
     width: 100%;
@@ -114,17 +109,21 @@ figure { margin: 0; padding: 0; }
     flex: 1;
 }
 
-.details h3 { margin: 0 0 5px; color: #1b3a57; }
+.details h3 { margin: 0 0 5px; color: #1a365d; }
 .details button {
-    background-color: #1b3a57;
+    background-color: #1a365d;
     color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.details button:hover { background-color: #2a5275; }
+
+/* Barra Lateral */
 .sidebar {
     flex: 1; 
     background-color: #e8ecef;
@@ -135,18 +134,18 @@ figure { margin: 0; padding: 0; }
     top: 20px;
 }
 
-.sidebar-title { color: #1b3a57; margin-top: 0; }
+.sidebar-title { color: #1a365d; margin-top: 0; }
 
 .promo-card {
     background: white;
     padding: 15px;
     margin-bottom: 15px;
-    border-left: 4px solid #1b3a57;
+    border-left: 4px solid #1a365d;
     border-radius: 4px;
 }
 
 .highlight {
-    background-color: #1b3a57;
+    background-color: #1a365d;
     color: white;
     border: none;
 }
@@ -170,20 +169,18 @@ figure { margin: 0; padding: 0; }
 }
 
 .site-footer {
-    background-color: #1b3a57;
+    background-color: #1a365d;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
 
-
 @media (max-width: 768px) {
     .main-wrapper { flex-direction: column; }
     .food-item { flex-direction: column; }
     .food-item figure { height: 180px; }
 }
-
 
 .modal-overlay {
     position: fixed; 
@@ -216,9 +213,7 @@ figure { margin: 0; padding: 0; }
     transition: transform 0.3s ease;
 }
 
-.modal-overlay:target .modal-card {
-    transform: scale(1); 
-}
+.modal-overlay:target .modal-card { transform: scale(1); }
 
 .modal-header {
     display: flex;
@@ -228,10 +223,7 @@ figure { margin: 0; padding: 0; }
     margin-bottom: 20px;
 }
 
-.modal-header h3 {
-    margin: 0;
-    color: #1b3a57;
-}
+.modal-header h3 { margin: 0; color: #1a365d; }
 
 .btn-close {
     text-decoration: none;
@@ -240,15 +232,12 @@ figure { margin: 0; padding: 0; }
     line-height: 1;
 }
 
-.btn-close:hover {
-    color: #e74c3c;
-}
-
+.btn-close:hover { color: #e74c3c; }
 
 .reservation-form label {
     display: block;
     margin-bottom: 5px;
-    color: #1b3a57;
+    color: #1a365d;
     font-weight: 600;
 }
 
@@ -265,7 +254,7 @@ figure { margin: 0; padding: 0; }
 .reservation-form button {
     width: 100%;
     padding: 12px;
-    background-color: #1b3a57;
+    background-color: #1a365d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -273,6 +262,201 @@ figure { margin: 0; padding: 0; }
     cursor: pointer;
 }
 
-.reservation-form button:hover {
+.reservation-form button:hover { background-color: #2a5275; }
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #1a365d; 
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.login-container fieldset {
+    border: 1px solid #e2e8f0; 
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0;
+}
+
+.login-container legend {
+    color: #2b6cb0; 
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568; 
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-bottom: 15px; 
+}
+
+.login-container input:focus {
+    border-color: #2b6cb0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15); 
+}
+
+.btn-ingresar {
+    background-color: #1a365d; 
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 5px;
+    letter-spacing: 0.5px; 
+}
+
+.btn-ingresar:hover { background-color: #2a4365; }
+
+.logo-principal {
+    width: 90px; 
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.premium-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.premium-table caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a365d;
+    margin-bottom: 12px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.premium-table th {
+    background-color: #1a365d;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.premium-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+.premium-table tbody tr:hover {
+    background-color: #f8fafc;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-cell {
+    background-color: #f0f4f8;
+    font-weight: bold;
+    color: #2b6cb0;
+    border-right: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.premium-table tfoot td {
     background-color: #2a5275;
+    color: white;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+}
+
+.login-logo, 
+.logo-principal {
+    max-width: 150px !important; /* Aumentamos de 120px a 150px */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    
+    border-radius: 50%;
+    border: 2px solid #1a365d;
+}
+
+.site-header .logo-principal {
+    max-width: 180px !important; /* Cambia este número para hacerlo aún más grande si quieres */
+    height: auto;
+    margin: 0 auto 15px auto; /* Lo centra perfectamente arriba del título */
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* Le puse un borde blanco para que contraste hermoso con tu fondo azul */
+}
+.orders-table th, .orders-table td {
+    vertical-align: middle; 
+}
+
+.dish-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.tiny-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 2px solid #e2e8f0;
+}
+
+mark {
+    padding: 6px 12px;
+    border-radius: 20px; 
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.status-prep {
+    background-color: #fef08a; 
+    color: #854d0e; 
+}
+
+.status-delivered {
+    background-color: #bbf7d0; 
+    color: #166534;
 }

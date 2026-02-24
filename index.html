@@ -13,7 +13,9 @@
 
     <header class="site-header">
         <div class="header-content">
-            <h1>🍽️ Sabor Azul</h1>
+            <img src="logo.png" alt="Logotipo premium de Sabor Azul" class="logo-principal">
+            
+            <h1> Sabor Azul</h1>
             <p>Alta Cocina & Experiencias</p>
         </div>
 
@@ -27,8 +29,8 @@
             <li class="user-dropdown">
                 <a href="#">Hola, Santiago ▼</a>
                 <div class="dropdown-content">
-                    <a href="#">Perfil</a>
-                    <a href="#">Mis Pedidos</a>
+                    <a href="perfil.html">Perfil</a>
+                    <a href="pedidos.html">Mis Pedidos</a>
                     <hr>
                     <a href="login.html" class="logout">Cerrar Sesión</a>
                 </div>
@@ -41,14 +43,55 @@
 
         <article class="content-area">
             <h2 class="area-title">Nuestros Especiales</h2>
-            
+
+            <table class="premium-table">
+                <caption>Nuestra Selección de Temporada</caption>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Platillo</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="highlight-cell">Especiales del Mar</td>
+                        <td>Salmón al Grill</td>
+                        <td>Corte fino con costra de finas hierbas.</td>
+                        <td>$350.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ceviche Sabor Azul</td>
+                        <td>Camarón macerado en cítricos.</td>
+                        <td>$280.00</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="highlight-cell">Cortes Premium</td>
+                        <td>Ribeye Añejo</td>
+                        <td>A la parrilla con salsa de vino tinto.</td>
+                        <td>$750.00</td>
+                    </tr>
+                    <tr>
+                        <td>Filete Mignon</td>
+                        <td>Bañado en salsa de champiñones.</td>
+                        <td>$680.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="footer-cell"><strong>Promoción:</strong> Copa de vino gratis en consumos mayores a $1,000 MXN</td>
+                        <td><strong>Ver términos</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
             <section class="food-item">
                 <figure>
                     <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Ensalada">
                 </figure>
                 <div class="details">
                     <h3>Ensalada César</h3>
-                    <p>Lechuga wwwwww, aderezo artesanal y parmesano.</p>
+                    <p>Lechuga orejona, aderezo artesanal y parmesano.</p>
                     <button>Ordenar $456.00</button>
                 </div>
             </section>
@@ -59,7 +102,7 @@
                 </figure>
                 <div class="details">
                     <h3>Pizza Azul</h3>
-                    <p>Higos,o y queso gorgonzola.</p>
+                    <p>Higos y queso gorgonzola.</p>
                     <button>Ordenar $400.00</button>
                 </div>  
             </section>
@@ -70,7 +113,7 @@
                 </figure>
                 <div class="details">
                     <h3>Ribeye Premium</h3>
-                    <p>Corte fino a la PARRILLA2 con salsa de vino.</p>
+                    <p>Corte fino a la parrilla con salsa de vino.</p>
                     <button>Ordenar $750.00</button>
                 </div>
             </section>
@@ -100,8 +143,9 @@
     </div>
 
     <footer class="site-footer">
-        <p>&copy; 2026 Restaurante Sabor rojo  actualizado2- HTML5 Semántico</p>
+        <p>&copy; 2026 Restaurante Sabor Azul - HTML5 Semántico</p>
     </footer>
+    
     <section id="modal-reserva" class="modal-overlay">
     
     <article class="modal-card">
